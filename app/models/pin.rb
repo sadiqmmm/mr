@@ -7,7 +7,7 @@ class Pin < ActiveRecord::Base
     :styles => {
       :thumb => "100x100#",
       :small  => "150x150>",
-      :medium => "200x200" }
+      :medium => "320x240>" }
   
   validates_attachment :image,
   											presence: true,
