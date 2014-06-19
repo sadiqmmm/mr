@@ -1,11 +1,17 @@
-<div class="hero-unit">
-	
-<h1>Welcome to Rails!</h1>
-<p>This is great to learn Rails. <%= link_to "Azad Labs", "http://azadlabs.com/"
- %></p>
+<% if user_signed_in? %>
+<h2>You're logged in </h2>
+<% else %>
 
-<p>
-	<%= link_to "Sign Up Now!", '#', class: "btn btn-primary btn-large" %>
-</p>
+	<div class="hero-unit">
+		
+	<h1>Welcome to Rails!</h1>
+	<p>This is great to learn Rails. <%= link_to "Azad Labs", "http://azadlabs.com/"
+	 %></p>
 
-</div>
+	<p>
+		<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
+	</p>
+
+	</div>
+
+<% end %>

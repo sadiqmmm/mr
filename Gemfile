@@ -22,5 +22,7 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end 
+
 gem 'jquery-rails'
 gem 'bootstrap-sass', '~> 2.3.2.2'
+gem 'devise'
