@@ -1,5 +1,5 @@
 <tr>
-  <td><%= image_tag pin.image(:medium) %></td>
+  <td><%= link_to image_tag(pin.image(:medium)), pin_path(pin) %></td>
   <td><%= pin.description %></td>
     <td><%= link_to 'Show', pin %></td>
     <% if current_user == pin.user %>
